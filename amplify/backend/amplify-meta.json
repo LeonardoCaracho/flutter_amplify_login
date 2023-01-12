@@ -14,33 +14,31 @@
   },
   "auth": {
     "flutteramplifylogin078ba1c9": {
-      "service": "Cognito",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [],
       "customAuth": false,
+      "dependsOn": [],
       "frontendAuthConfig": {
-        "socialProviders": [],
-        "usernameAttributes": [],
-        "signupAttributes": [
-          "EMAIL"
-        ],
-        "passwordProtectionSettings": {
-          "passwordPolicyMinLength": 8,
-          "passwordPolicyCharacters": []
-        },
         "mfaConfiguration": "OFF",
         "mfaTypes": [
           "SMS"
         ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 6,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS"
+          ]
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
         "verificationMechanisms": [
           "EMAIL"
         ]
       },
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-flutteramplifylogin-dev-143314-deployment/amplify-cfn-templates/auth/flutteramplifylogin078ba1c9-cloudformation-template.json",
-        "logicalId": "authflutteramplifylogin078ba1c9"
-      },
-      "lastPushTimeStamp": "2023-01-11T17:45:55.858Z",
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
       "output": {
         "UserPoolId": "us-east-1_D96gOHriI",
         "AppClientIDWeb": "3diib7n7724ut7gq7ecg81b9fc",
@@ -50,7 +48,12 @@
         "IdentityPoolName": "flutteramplifylogin078ba1c9_identitypool_078ba1c9__dev",
         "UserPoolName": "flutteramplifylogin078ba1c9_userpool_078ba1c9"
       },
-      "lastPushDirHash": "vXZjyv6doxkY1A1cO+W9xK/qDrA="
+      "lastPushTimeStamp": "2023-01-12T22:17:07.053Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-flutteramplifylogin-dev-143314-deployment/amplify-cfn-templates/auth/flutteramplifylogin078ba1c9-cloudformation-template.json",
+        "logicalId": "authflutteramplifylogin078ba1c9"
+      },
+      "lastPushDirHash": "rDKK3sZVEiaiNVSUHCYrj7U1jI0="
     }
   }
 }

@@ -1,35 +1,53 @@
 name: flutter_amplify_login
-description: An example Flutter app using Very Good CLI and AWS Amplify Authentication
+description: Example of a flutter application to use Very Good CLI and AWS Amplify auth service
 version: 1.0.0+1
 publish_to: none
 
 environment:
-  sdk: ">=2.18.0 <3.0.0"
-  flutter: 3.3.8
+  sdk: ">=2.18.2 <3.0.0"
+  flutter: 3.3.4
 
 dependencies:
+  amplify_auth_cognito: ^0.6.9
+  amplify_flutter: ^0.6.9
+  app_ui:
+    path: packages/app_ui
   auth_client:
     path: packages/auth_client
-  user_repository:
-    path: packages/user_repository
-  form_inputs:
-    path: packages/form_inputs
-  equatable: ^2.0.5
   bloc: ^8.1.0
+  equatable: ^2.0.5
+  flow_builder: ^0.0.9
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.1
   flutter_localizations:
     sdk: flutter
+  flutter_svg: ^1.1.6
+  form_inputs:
+    path: packages/form_inputs
   intl: ^0.17.0
+  modal_bottom_sheet: ^2.1.2
+  user_repository:
+    path: packages/user_repository
 
 dev_dependencies:
   bloc_test: ^9.1.0
+  build_runner: ^2.3.0
   flutter_test:
     sdk: flutter
+  mockingjay: ^0.3.0
   mocktail: ^0.3.0
-  very_good_analysis: ^3.1.0
+  very_good_analysis: ^3.0.2
 
 flutter:
-  uses-material-design: true
   generate: true
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+flutter_gen:
+  output: lib/generated/
+  line_length: 80
+
+  integrations:
+    flutter_svg: true

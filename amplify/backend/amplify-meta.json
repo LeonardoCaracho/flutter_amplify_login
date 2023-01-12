@@ -1,0 +1,56 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-flutteramplifylogin-dev-143314-authRole",
+      "UnauthRoleArn": "arn:aws:iam::785208502238:role/amplify-flutteramplifylogin-dev-143314-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::785208502238:role/amplify-flutteramplifylogin-dev-143314-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-flutteramplifylogin-dev-143314-deployment",
+      "UnauthRoleName": "amplify-flutteramplifylogin-dev-143314-unauthRole",
+      "StackName": "amplify-flutteramplifylogin-dev-143314",
+      "StackId": "arn:aws:cloudformation:us-east-1:785208502238:stack/amplify-flutteramplifylogin-dev-143314/08e61a40-91d6-11ed-903b-0a207f235b77",
+      "AmplifyAppId": "dhk3x42g06qbe"
+    }
+  },
+  "auth": {
+    "flutteramplifylogin078ba1c9": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-flutteramplifylogin-dev-143314-deployment/amplify-cfn-templates/auth/flutteramplifylogin078ba1c9-cloudformation-template.json",
+        "logicalId": "authflutteramplifylogin078ba1c9"
+      },
+      "lastPushTimeStamp": "2023-01-11T17:45:55.858Z",
+      "output": {
+        "UserPoolId": "us-east-1_D96gOHriI",
+        "AppClientIDWeb": "3diib7n7724ut7gq7ecg81b9fc",
+        "AppClientID": "2nslt693oht5he8et0qtrsl9qv",
+        "IdentityPoolId": "us-east-1:76c06cc9-1553-4a37-b7a4-f2c755c3b226",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:785208502238:userpool/us-east-1_D96gOHriI",
+        "IdentityPoolName": "flutteramplifylogin078ba1c9_identitypool_078ba1c9__dev",
+        "UserPoolName": "flutteramplifylogin078ba1c9_userpool_078ba1c9"
+      },
+      "lastPushDirHash": "vXZjyv6doxkY1A1cO+W9xK/qDrA="
+    }
+  }
+}

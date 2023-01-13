@@ -1,26 +1,29 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-flutteramplifylogin-dev-143314-authRole",
-      "UnauthRoleArn": "arn:aws:iam::785208502238:role/amplify-flutteramplifylogin-dev-143314-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::785208502238:role/amplify-flutteramplifylogin-dev-143314-authRole",
+      "AuthRoleName": "amplify-flutteramplifylogin-dev-215053-authRole",
+      "UnauthRoleArn": "arn:aws:iam::785208502238:role/amplify-flutteramplifylogin-dev-215053-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::785208502238:role/amplify-flutteramplifylogin-dev-215053-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-flutteramplifylogin-dev-143314-deployment",
-      "UnauthRoleName": "amplify-flutteramplifylogin-dev-143314-unauthRole",
-      "StackName": "amplify-flutteramplifylogin-dev-143314",
-      "StackId": "arn:aws:cloudformation:us-east-1:785208502238:stack/amplify-flutteramplifylogin-dev-143314/08e61a40-91d6-11ed-903b-0a207f235b77",
-      "AmplifyAppId": "dhk3x42g06qbe"
+      "DeploymentBucketName": "amplify-flutteramplifylogin-dev-215053-deployment",
+      "UnauthRoleName": "amplify-flutteramplifylogin-dev-215053-unauthRole",
+      "StackName": "amplify-flutteramplifylogin-dev-215053",
+      "StackId": "arn:aws:cloudformation:us-east-1:785208502238:stack/amplify-flutteramplifylogin-dev-215053/592e9980-92dc-11ed-8d7f-0a9e8bdf8903",
+      "AmplifyAppId": "d3j8mw23g8ucm6"
     }
   },
   "auth": {
-    "flutteramplifylogin078ba1c9": {
-      "customAuth": false,
+    "flutteramplifylogin": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
       "dependsOn": [],
+      "customAuth": false,
       "frontendAuthConfig": {
-        "mfaConfiguration": "OFF",
-        "mfaTypes": [
-          "SMS"
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
         ],
+        "signupAttributes": [],
         "passwordProtectionSettings": {
           "passwordPolicyMinLength": 6,
           "passwordPolicyCharacters": [
@@ -28,32 +31,29 @@
             "REQUIRES_NUMBERS"
           ]
         },
-        "signupAttributes": [
-          "EMAIL"
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
         ],
-        "socialProviders": [],
-        "usernameAttributes": [],
         "verificationMechanisms": [
           "EMAIL"
         ]
       },
-      "providerPlugin": "awscloudformation",
-      "service": "Cognito",
-      "output": {
-        "UserPoolId": "us-east-1_D96gOHriI",
-        "AppClientIDWeb": "3diib7n7724ut7gq7ecg81b9fc",
-        "AppClientID": "2nslt693oht5he8et0qtrsl9qv",
-        "IdentityPoolId": "us-east-1:76c06cc9-1553-4a37-b7a4-f2c755c3b226",
-        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:785208502238:userpool/us-east-1_D96gOHriI",
-        "IdentityPoolName": "flutteramplifylogin078ba1c9_identitypool_078ba1c9__dev",
-        "UserPoolName": "flutteramplifylogin078ba1c9_userpool_078ba1c9"
-      },
-      "lastPushTimeStamp": "2023-01-12T16:43:52.557Z",
       "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-flutteramplifylogin-dev-143314-deployment/amplify-cfn-templates/auth/flutteramplifylogin078ba1c9-cloudformation-template.json",
-        "logicalId": "authflutteramplifylogin078ba1c9"
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-flutteramplifylogin-dev-215053-deployment/amplify-cfn-templates/auth/flutteramplifylogin-cloudformation-template.json",
+        "logicalId": "authflutteramplifylogin"
       },
-      "lastPushDirHash": "rDKK3sZVEiaiNVSUHCYrj7U1jI0="
+      "lastPushTimeStamp": "2023-01-13T01:09:24.420Z",
+      "output": {
+        "UserPoolId": "us-east-1_C9VBiCv0r",
+        "AppClientIDWeb": "fuh4su0q2ju76m9nvb48j9lms",
+        "AppClientID": "4uif2oeuatdald6d1pm2t1fq1a",
+        "IdentityPoolId": "us-east-1:0f5d21a6-c197-428c-a7ce-46d962c7dc51",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:785208502238:userpool/us-east-1_C9VBiCv0r",
+        "IdentityPoolName": "testAuthIdentityPool__dev",
+        "UserPoolName": "flutteramplifylogin"
+      },
+      "lastPushDirHash": "4CVwAHNUo3kTmd1GMnn1YhJtz04="
     }
   }
 }

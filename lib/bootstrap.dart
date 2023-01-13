@@ -5,7 +5,7 @@ import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
 import 'package:amplify_flutter/amplify_flutter.dart';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_amplify_login/amplify_configuration.dart';
+import 'package:flutter_amplify_login/amplifyconfiguration.dart';
 
 class AppBlocObserver extends BlocObserver {
   @override
@@ -25,7 +25,7 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
   FlutterError.onError = (details) {
     log(details.exceptionAsString(), stackTrace: details.stack);
   };
-
+  WidgetsFlutterBinding.ensureInitialized();
   await configureAmplify();
 
   Bloc.observer = AppBlocObserver();
@@ -38,5 +38,5 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
 
 Future<void> configureAmplify() async {
   await Amplify.addPlugins([AmplifyAuthCognito()]);
-  await Amplify.configure(amplifyConfiguration);
+  await Amplify.configure(amplifyconfig);
 }

@@ -1,6 +1,6 @@
 {
   "auth": {
-    "flutteramplifylogin078ba1c9": {
+    "flutteramplifylogin": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -15,11 +15,11 @@
           ],
           "passwordPolicyMinLength": 6
         },
-        "signupAttributes": [
+        "signupAttributes": [],
+        "socialProviders": [],
+        "usernameAttributes": [
           "EMAIL"
         ],
-        "socialProviders": [],
-        "usernameAttributes": [],
         "verificationMechanisms": [
           "EMAIL"
         ]

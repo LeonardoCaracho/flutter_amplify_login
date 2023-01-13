@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "flutteramplifylogin078ba1c9_identitypool_078ba1c9",
+    "identityPoolName": "testAuthIdentityPool",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "flutte078ba1c9",
-    "userPoolName": "flutteramplifylogin078ba1c9_userpool_078ba1c9",
+    "resourceNameTruncated": "flutteee72f1c1",
+    "userPoolName": "flutteramplifylogin",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -14,50 +14,36 @@
     ],
     "smsAuthenticationMessage": "Your authentication code is {####}",
     "smsVerificationMessage": "Your verification code is {####}",
-    "emailVerificationSubject": "Your verification code",
-    "emailVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Verification code: {####}",
+    "emailVerificationMessage": "Verification code: {####}",
     "defaultPasswordPolicy": false,
     "passwordPolicyMinLength": 6,
     "passwordPolicyCharacters": [
       "Requires Lowercase",
       "Requires Numbers"
     ],
-    "requiredAttributes": [
-      "email"
-    ],
+    "requiredAttributes": [],
     "aliasAttributes": [],
     "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [],
     "userpoolClientReadAttributes": [],
-    "userpoolClientLambdaRole": "flutte078ba1c9_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "flutteee72f1c1_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "078ba1c9",
-    "resourceName": "flutteramplifylogin078ba1c9",
+    "sharedId": "ee72f1c1",
+    "resourceName": "flutteramplifylogin",
     "authSelections": "identityPoolAndUserPool",
-    "useDefault": "manual",
-    "userPoolGroupList": [],
     "serviceName": "Cognito",
-    "usernameCaseSensitive": false,
-    "useEnabledMfas": true,
-    "authRoleArn": {
-      "Fn::GetAtt": [
-        "AuthRole",
-        "Arn"
-      ]
-    },
-    "unauthRoleArn": {
-      "Fn::GetAtt": [
-        "UnauthRole",
-        "Arn"
-      ]
-    },
-    "breakCircularDependency": true,
-    "dependsOn": [],
+    "usernameAttributes": [
+      "email"
+    ],
+    "useDefault": "manual",
     "userPoolGroups": false,
+    "userPoolGroupList": [],
     "adminQueries": false,
     "thirdPartyAuth": false,
     "authProviders": [],
-    "hostedUI": false
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true
   }
 }
